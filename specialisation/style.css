@@ -11,6 +11,7 @@
 	--color-charcoal-soft: #3A3A3A;
 	--color-taupe: #A69080;
 	--color-taupe-light: #C4B5A5;
+	--color-taupe-lighter: #f0dbc5;
 
 	--font-display: 'Cormorant Garamond', Georgia, serif;
 	--font-body: 'DM Sans', -apple-system, sans-serif;
@@ -148,9 +149,15 @@ a {
 	display: none;
 }
 
+.nav-name {
+	margin-right: auto;
+	font-weight: 600;
+	font-size: 1.15rem;
+	letter-spacing: 0.04em;
+}
+
 .nav-main {
 	display: flex;
-	justify-content: right;
 
 	gap: var(--space-lg);
 }
@@ -303,7 +310,7 @@ a {
 }
 
 .specialisation-text {
-	color: var(--color-taupe-light);
+	color: var(--color-taupe-lighter);
 	margin-bottom: var(--space-md);
 }
 
@@ -348,15 +355,15 @@ a {
 }
 
 /* ========================================
-           FOOTER - 4 Column Layout
+         	  FOOTER
 ======================================== */
 .site-footer {
-	background: linear-gradient(104deg,
+	background: linear-gradient(90deg,
 			#1C1C1C 0%,
-			#1C1C1C 28%,
-			#222222 28%,
-			#222222 72%,
-			#1C1C1C 72%,
+			#1C1C1C 30%,
+			#222222 30%,
+			#222222 70%,
+			#1C1C1C 70%,
 			#1C1C1C 100%);
 	color: var(--color-cream);
 	padding: var(--space-md) 0 var(--space-md);

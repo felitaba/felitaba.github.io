@@ -19,6 +19,7 @@
     <header class="site-header" id="header">
         <div class="container">
             <nav class="nav-main">
+                <a href="../#" class="nav-name">Felix Tabar</a>
                 <a href="../index.html">About Me</a>
                 <a href="../echo/index.html">Project Echo</a>
                 <a href="#">Entropy</a>
@@ -73,7 +74,7 @@
                         alt="Swedish Game Awards group photo">
 
                     <div class="collection-overlay">
-                        <p class="collection-count">The team, showcasing the awards for Game of the Year and Best Visuals</p>
+                        <p class="collection-count">The team showcasing two awards, Game of the Year and Best Visuals</p>
                     </div>
                 </div>
 
@@ -166,7 +167,13 @@
                     <p class="text-body entropy-text">
                         This was achieved by reusing the same form of travel and collision logic that the projectiles themselves use.
                         Sweeping a sphere shape a set distance from the gun towards the point where the player is looking,
-                        bouncing if a hit is found and generating a beam mesh across the found path.
+                        bouncing if a hit is found and generating a particle system with particles between each hit.
+                    </p>
+
+                    <p class="text-body entropy-text">
+                        When aiming,
+                        instead of regenerating new particles every frame, this system updates the particles that already exist.
+                        Only generating new ones if more bounces compared to the last frame were detected, or destroying already existing ones if fewer are detected.
                     </p>
                 </div>
 
@@ -176,7 +183,7 @@
                             alt="Aiming beam">
 
                         <div class="collection-overlay">
-                            <p class="collection-count">Aiming, displaying the path a fired orb will take</p>
+                            <p class="collection-count">Aiming, generating a beam and displaying the path a fired orb will take</p>
                         </div>
                     </div>
                 </div>
